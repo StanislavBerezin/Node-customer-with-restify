@@ -18,3 +18,7 @@ const CustomerSchema = new mongoose.Schema({
   }
 });
 
+CustomerSchema.plugin(timestamp);
+
+const Customer = mongoose.model('Customer', CustomerSchema);
+module.exports = Customer;
