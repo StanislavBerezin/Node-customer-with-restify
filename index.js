@@ -2,10 +2,10 @@ const restify = require('restify');
 const mongoose = require('mongoose');
 const config = require('./config');
 const rjwt = require('restify-jwt-community');
-
+//can refactor
 const server = restify.createServer();
 
-// Middleware
+// Middleware, ca use many other ones too in the same way
 server.use(restify.plugins.bodyParser());
 
 // Protect Routes

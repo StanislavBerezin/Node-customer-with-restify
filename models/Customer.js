@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+//to have date created
 const timestamp = require('mongoose-timestamp');
 
 const CustomerSchema = new mongoose.Schema({

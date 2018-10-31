@@ -15,12 +15,12 @@ exports.authenticate = (email, password) => {
           resolve(user);
         } else {
           // Pass didn't match
-          reject('Authentication Failed');
+          reject('Authentication Failed, try again');
         }
       });
     } catch (err) {
       // Email not found
-      reject('Authentication Failed');
+      reject('Authentication Failed, try again');
     }
   });
 };
